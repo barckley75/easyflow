@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #111;
+}
+
+.loader {
+    margin-top: 20%;
+    margin-left: 46%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid #575757;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite;
+    /*Safari*/
+    animation: spin 2s linear infinite;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+select,
+textarea:focus,
+button:focus,
+input:focus {
+    outline: none;
+}
+
+#draggable {
+    top: 10%;
+    position: fixed;
+    left: -6.5%;
+    width: 8%;
+    height: 10%;
+    border-radius: 2%;
+    transition: left 0.5s;
+    z-index: 2;
+    -webkit-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+    -ms-transition: left 0.5s;
+    -o-transition: left 0.5s;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+}
+
+#draggable:hover {
+    left: -1%;
+}
+
+.icon-bar a {
+    margin: 8%;
+    display: block;
+    text-align: center;
+    padding: 20%;
+    border: 2px solid rgba(255, 255, 255, 0.281);
+    transition: background-color .3s ease;
+    color: #fff;
+    border-radius: 4%;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -ms-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+}
+
+.icon-bar a:hover {
+    background-color: rgba(58, 58, 58, 0.774);
+}
+
+.active {
+    background-color: rgba(24, 24, 24, 0.781);
+}
+
+/* #barOn {
+    display: none;
+} */

@@ -1,0 +1,18 @@
+section.cartFormBox.cart
+    div#firstLine
+        h2#cartTitle #{result.workName}
+        button.deleteItem
+            p Delete
+    form.cartForm
+        div.cartFormCard
+            div.leftCard
+                a(href=`/workDescription/${result._id}`)
+                    img#imageCart(src=`/img/imagePreview/${result.imagePreview}`)
+            div.rightCard
+                h2#titleDesc #{result.workTitle}
+                div
+                    p#descriptionItem Description: !{result.description}
+                    div.checkOutItem
+                        p.quantityItem Quantity: #{result.quantity}
+                        p#priceItem Price: #{result.price}
+                        p.priceItems Total Price: € #{result.totalPrice}

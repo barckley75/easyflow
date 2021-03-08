@@ -1,0 +1,4 @@
+node_modules
+*.env
+.cache/
+public/jodit-3.3.24/

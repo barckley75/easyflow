@@ -1,0 +1,38 @@
+extends base
+block append head
+    link(rel="stylesheet" type="text/css" href="resources/css/styleLogin.css")
+    link(rel="stylesheet" type="text/css" href="resources/css/queriesLogin.css")
+block content
+    div.loader
+    include _desktopMenu
+    include _mobileMenu
+    .containerLogin.show(style="display:none;")
+        section.loginFormBox.login
+            h1.loginTitle Login
+            form.loginForm
+                div.loginFormInput
+                    label.form__label(for='email') Email address
+                    input#email.form__input(type='email', placeholder='you@example.com', required)
+                div.loginFormInput
+                    label.form__label(for='password') Password
+                    input#password.form__input(type='password', placeholder='••••••••', required, minlength='8')
+                div
+                    button.btnLogin Login
+
+        section.loginFormBox.signup
+            h1.signupTitle Signup
+            form.signupForm
+                div.loginFormInput
+                    label.form__label(for='text') Your name
+                    input#nameSignup.form__input(type='text', placeholder='Your Name', required)
+                div.loginFormInput
+                    label.form__label(for='email') Your email
+                    input#emailSignup.form__input(type='email', placeholder='Your email', required)
+                div.loginFormInput
+                    label.form__label(for='password') Password
+                    input#passwordSignup.form__input(type='password', placeholder='••••••••', required, minlength='8')
+                div.loginFormInput
+                    label.form__label(for='password') Confirm password
+                    input#passwordConfirmSignup.form__input(type='password', placeholder='••••••••', required, minlength='8')
+                div
+                    button.btnSignup Submit

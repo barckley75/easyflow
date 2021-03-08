@@ -1,0 +1,57 @@
+extends base
+block append head
+    link(rel="stylesheet" type="text/css" href="/resources/css/_carousel.css")
+    link(rel="stylesheet" type="text/css" href="/resources/css/styleWorkDescription.css")
+    link(rel="stylesheet" type="text/css" href="/resources/css/queriesWorkDescription.css")
+
+    div.loader
+
+block content
+    include _desktopMenu
+    include _mobileMenu
+    .show(style="display:none;")
+        img#backDesktop(src=`/img/imageCover/desktop/${work.imageCover}`)
+        img#backMobile(src=`/img/imageCover/mobile/${work.imageCover}`)
+
+        .section
+            .descriptionBackground
+                include _carousel
+                .line
+                    .titleAndShop
+                        div.workDescription.name=work.workName
+                            data(value=work._id)
+                            //- cookies is a variable created in viewController using req.cookies
+                            data#cookies(value=cookies)
+                        div.vertivalLine
+                        nav.shop
+                            div.shopAdd
+                                button.workDescription#add ADD
+                                //- Total number of the items
+                            div.shopIcon
+                                a(href="/cart" title="Checkout")
+                                    img#cart(src="/resources/img/icons/set0/cart.svg" width="30%" alt="Add Item To cart")
+                            div
+                                .workDescription.itemsCounter 0
+                .container
+                    .slide
+                        .row
+                            each photo in work.imagePoster
+                                .column
+                                    img.imageDefault(src=`/img/imagePoster/${photo}`, style="width:50%", onmouseover="showPhoto(this);")
+
+                        .containerExpandedImg
+                            #imageDefault=work.imagePoster[0]
+                            img#expandedImg
+
+                    div.vertivalLine_2
+
+                    .containerDescription
+                        ul
+                            li
+                                .workDescription.mainDesc=work.workTitle
+                            li
+                                .workDescription.price Price: #{work.price}.00 €
+                            li
+                                .workDescription.description !{work.description}
+
+    script(type="text/javascript" src="/resources/js/workDescription.js")

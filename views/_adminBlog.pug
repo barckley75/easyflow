@@ -1,0 +1,70 @@
+//- ------------------------- BLOG SECTION -------------------------
+
+//- Blog Page
+section.formBox.blogPage
+    h2.blogTitle BlogPage
+    div.icon
+        img(src="/resources/img/icons/set0/blog.svg" width="5%" alt="blog")
+    form.inputCentered.blogPageForm
+        div.formInput
+            label.admin__label(for='text') Title of the blog
+            input#blogTitle.admin__input(type='text', placeholder='Blog Title', required)
+        div.formInput
+            label.admin__label(for='text') Author's name
+            input#blogName.admin__input(type='text', placeholder='Your name', required)
+        div.formInput
+            label.admin__label(for='text') Write about you
+            textarea#aboutMe.admin__input(type='text', placeholder='About me description', required)
+        div
+            button.btnBlog Submit
+
+//- Blog Post
+section.formBox.blogPost
+    h2.blogTitle Blog Post
+    div.icon
+        img(src="/resources/img/icons/set0/blog.svg" width="5%" alt="blog")
+    form.inputCentered.blogForm
+        div.formInput
+            label.admin__label(for='text') Give A title to the new post
+            input#postTitle.admin__input(type='text', placeholder='Start a new blog post', required)
+        div.formInput
+            label.admin__label(for='text') Start a new blog post
+            textarea#blogEditor.admin__input(type='text', placeholder='Start a new blog post', required)
+        div.formInput
+            label.admin__label(for='photoBlog') Image poster
+            input#photoBlog.admin__input(type='file', placeholder='Image poster', required)
+        div
+            button.btnBlog Submit
+
+//- Select Popular
+section.formBox.selectPopular
+    h2.blogTitle Delete Post
+    div.icon
+        img(src="/resources/img/icons/set0/blog.svg" width="5%" alt="blog")
+    form.selectPopularForm
+        ul
+            for post in blog
+                li
+                    if (post.popular)
+                        input.selectCheckedPost(type="radio", name=`select`, value=`${post._id}`, checked)
+                    else
+                        input.selectCheckedPost(type="radio", name=`select`, value=`${post._id}`)
+                    img.previewDeleteBlog(src=`/img/blog/${post.photoBlog}`, type="image/jpeg")
+                    label.admin__label(for=`${post.postTitle}`) #{post.postTitle}
+
+        input.btnBlog(type="submit", value="Submit")
+
+//- Delete Post
+section.formBox.deletePost
+    h2.blogTitle Delete Post
+    div.icon
+        img(src="/resources/img/icons/set0/blog.svg" width="5%" alt="blog")
+    form.deletePostForm
+        ul
+            for post in blog
+                li
+                    input.deleteCheckedPost(type="checkbox", name=`${post.postTitle}`, value=`${post._id}`)
+                    img.previewDeleteBlog(src=`/img/blog/${post.photoBlog}`, type="image/jpeg")
+                    label.admin__label(for=`${post.postTitle}`) #{post.postTitle}
+
+        input.btnBlog(type="submit", value="Submit")

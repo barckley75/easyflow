@@ -1,0 +1,182 @@
+.descriptionBackground {
+    background-image: linear-gradient(rgba(27, 27, 27, 0.746), rgb(0, 0, 0));
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    overflow: scroll;
+}
+
+#backDesktop {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#backMobile {
+    display: none;
+}
+
+.line:after {
+    content: "";
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    height: 0.5em;
+    width: 50%;
+    border-top: 1px solid rgba(255, 255, 255, 0.281);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.titleAndShop {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.name {
+    margin-left: 5%;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
+    font-size: 300%;
+    font-weight: 300;
+    z-index: 1;
+}
+
+.shop {
+    padding-right: 2%;
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.shopIcon {
+    text-align: center;
+}
+
+#add {
+    text-align: right;
+    background: transparent;
+    text-decoration: none;
+    border-block-end-style: none;
+    border-block-start: none;
+    border-right-style: none;
+    border-left-style: none;
+    font-size: 100%;
+    /* font-weight: 100; */
+}
+
+.itemsCounter {
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.slide {
+    display: flex;
+    z-index: 1;
+    width: 60%;
+    margin-right: 5%;
+}
+
+.row {
+    margin-top: 3%;
+    margin-left: 7%;
+    width: 50%;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    width: 70%;
+    margin-left: 20%;
+}
+
+/* Style the images inside the grid */
+.column img {
+    border-radius: 20%;
+    opacity: 0.8;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    padding: 1%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+
+.column img:hover {
+    border: 1px solid rgba(255, 255, 255, 0.301);
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.containerExpandedImg {
+    width: 150%;
+    position: relative;
+}
+
+#expandedImg {
+    width: 135%;
+    border-radius: 5%;
+    padding: 0.5%;
+    border: 1px solid rgba(255, 255, 255, 0.068);
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.containerDescription {
+    margin-top: 5%;
+    padding-left: 3%;
+    width: 140%;
+}
+
+ul li {
+    list-style: none;
+}
+
+.workDescription {
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.mainDesc {
+    font-size: 200%;
+    text-align: left;
+    padding: 0 15% 0 10%;
+    margin-bottom: 3%;
+    text-transform: capitalize;
+}
+
+.price {
+    font-size: 100%;
+    text-align: left;
+    padding: 0 15% 0 10%;
+    margin-bottom: 1%;
+    text-transform: capitalize;
+}
+
+.description {
+    margin-bottom: 10%;
+    padding: 0 15% 0 10%;
+    text-align: justify;
+}

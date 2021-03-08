@@ -1,0 +1,108 @@
+@media only screen and (max-width:1199px) {
+    input.form__input {
+        width: 45vh;
+        height: 40px;
+    }
+
+    .signupForm,
+    .loginForm {
+        text-align: right;
+        margin-left: 0;
+        margin-right: 5%;
+    }
+
+    .loginFormInput {
+        margin: 0;
+        width: 106%;
+    }
+}
+
+@media only screen and (max-width:1023px) {}
+
+@media only screen and (max-width:811px) {
+
+    input.form__input {
+        width: 45vh;
+        height: 40px;
+    }
+
+    .signupForm,
+    .loginForm {
+        text-align: right;
+        margin-left: 0;
+        margin-right: 5%;
+    }
+
+    .loginFormInput {
+        margin: 0;
+        width: 106%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .containerLogin {
+        height: 125vh;
+    }
+
+    .loginFormBox {
+        width: 93%;
+    }
+
+    .loginFormInput {
+        margin: 0;
+        width: 120%;
+    }
+
+    .form__label {
+        margin-right: 4%;
+    }
+
+    input.form__input {
+        width: 47vh;
+        height: 40px;
+    }
+
+    .signupForm,
+    .loginForm {
+        text-align: right;
+        margin-left: 0;
+        margin-right: 15%;
+    }
+}
+
+@media only screen and (max-width:411px) {
+    input.form__input {
+        width: 34vh;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .containerLogin {
+        height: 140vh;
+    }
+
+    .loginFormBox {
+        width: 93%;
+    }
+
+    .loginFormInput {
+        margin: 0;
+        width: 120%;
+    }
+
+    .form__label {
+        margin-right: 4%;
+    }
+
+    input.form__input {
+        width: 38vh;
+        height: 40px;
+    }
+
+    .signupForm,
+    .loginForm {
+        text-align: right;
+        margin-left: 0;
+        margin-right: 15%;
+    }
+}

@@ -1,0 +1,77 @@
+//- ------------------------- WORK PAGE SECTION -------------------------
+
+//- Create Homepage
+section.formBox.createWorkPage
+    h2.pagesTitle Create the shop page
+    div.icon
+        img(src="/resources/img/icons/set0/shop.svg" width="5%" alt="Shop")
+    form.inputCentered.createWorkPageForm
+        div.formInput
+            label.admin__label(for='text') Title of the shop page
+            input#createTitle.admin__input(type='text', placeholder='Title work', maxlength='30', required)
+        div.formInput
+            label.admin__label(for='text') Your motto
+            input#createSubTitle.admin__input(type='text', placeholder='E.g. Handmade is better!', maxlength='50', required)
+        div.formInput
+            label.admin__label(for='createImageCover') Image cover work page
+            input.admin__input(type='file', placeholder='Image cover', accept='image/*', id='createImageCover', name='createImageCover', required)
+        div
+            button.btnWorkPage Submit
+
+//- Select Work Page
+section.formBox.selectWorkPage
+    h2.pagesTitle Select a workpage
+    div.icon
+        img(src="/resources/img/icons/set0/shop.svg" width="5%" alt="Home")
+    form.selectWorkPageForm
+        ul
+            for work in workPage
+                li
+                    if (work.publish)
+                        input.selectWorkPageChecked(type="radio" name=`select` value=`${work._id}` checked)
+                    else
+                        input.selectWorkPageChecked(type="radio" name=`select` value=`${work._id}`)
+                    img.previewWorkPage(src=`/img/workpage/desktop/${work.imageCover}` title=work.imageCover alt=work.imageCover)
+                    label.admin__label(for=`${work.title}`) #{work.title}
+
+        input.btnWorkPage(type="submit", value="Submit")
+
+//- Update Work Page
+section.formBox.updateWorkPage
+    h2.workGalleryTitle Page Shop Gallery
+    div.icon
+        img(src="/resources/img/icons/set0/shop.svg" width="5%" alt="Shop")
+    form.updateWorkPageForm
+        ul
+            for work in workPage
+                li
+                    input.selectUpdateWorkPageChecked(type="radio" name="select" value=`${work._id}`)
+                    img.previewWorkPage(src=`/img/workpage/desktop/${work.imageCover}` title=work.imageCover alt=work.imageCover)
+                    label.admin__label(for=`${work.title}`) #{work.title}
+
+        div.inputCentered.formInput
+            label.admin__label(for='text') Title of the shop page
+            input#updateTitle.admin__input(type='text', placeholder='Title work', maxlength='30', required)
+        div.formInput
+            label.admin__label(for='text') Your motto
+            input#updateSubTitle.admin__input(type='text', placeholder='E.g. Handmade is better!', maxlength='50', required)
+        div.formInput
+            label.admin__label(for='updateImageCover') Image cover work page
+            input.admin__input(type='file', placeholder='Image cover', accept='image/*', id='updateImageCover', name='updateImageCover', required)
+        div
+            button.btnWorkPage Submit
+
+//- Delete Work Page
+section.formBox.deleteWorkPage
+    h2.deleteTitle Delete item
+    div.icon
+        img(src="/resources/img/icons/set0/shop.svg" width="5%" alt="Shop")
+    form.deleteWorkPageForm
+        ul
+            for work in workPage
+                li
+                    input.deleteCheckedWorkPage(type="checkbox", name=`${work._id}`, value=`${work._id}`)
+                    img.previewWorkPage(src=`/img/workpage/desktop/${work.imageCover}` title=work.imageCover alt=work.imageCover)
+                    label.admin__label(for=`${work._id}`) #{work.title}
+
+        input.btnWorkPage(type="submit", value="Submit")

@@ -1,0 +1,139 @@
+@media only screen and (max-width:1199px) {
+    #video {
+        left: -55%;
+    }
+
+    #photo {
+        display: none;
+    }
+
+    #mute {
+        top: 25%
+    }
+
+    .presentation {
+        margin: 0 15% 0 16%;
+        padding-top: 60%;
+        font-weight: 100;
+        font-size: 150%;
+        color: #fff;
+    }
+
+    .name {
+        margin-top: 3%;
+        margin-right: 20%;
+        font-size: 200%;
+        color: #fff;
+        text-align: right;
+        font-weight: 300
+    }
+}
+
+@media only screen and (max-width:1023px) {
+    #video {
+        left: -60%;
+    }
+
+    .presentation {
+        margin: 0 15% 0 16%;
+        padding-top: 50%;
+        font-weight: 300;
+        font-size: 100%;
+        color: #fff
+    }
+
+    .name {
+        margin-top: 3%;
+        margin-right: 20%;
+        font-size: 200%;
+        color: #fff;
+        text-align: right;
+        font-weight: 300
+    }
+
+    .shopNow {
+        top: 39.9%;
+        left: 47%;
+    }
+}
+
+@media only screen and (max-width:811px) {
+    #video {
+        left: -60%;
+        max-height: 100%;
+    }
+
+    .titleOverVideo {
+        font-size: 120%;
+        width: 80%;
+    }
+
+    .presentation {
+        margin: 0 10% 0 10%;
+        padding-top: 50%;
+        font-weight: 300;
+        font-size: 150%;
+        color: #fff;
+        text-align: justify
+    }
+
+    .name {
+        margin-top: 5%;
+        margin-right: 10%;
+        font-size: 160%;
+        color: #fff;
+        text-align: right;
+        font-weight: 300
+    }
+}
+
+@media only screen and (max-width:767px) {
+    #video {
+        left: -90%;
+    }
+
+    .presentation {
+        padding-top: 50%;
+        font-weight: 300;
+        font-size: 100%;
+        color: #fff;
+        text-align: justify
+    }
+
+    .name {
+        margin-top: 2%;
+        margin-right: 10%;
+        font-size: 130%;
+        color: #fff;
+        text-align: right;
+        font-weight: 300
+    }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+    #video {
+        left: -130%;
+    }
+
+    .titleOverVideo {
+        top: 43%;
+        font-size: 100%;
+        width: 90%;
+        letter-spacing: 7px;
+    }
+
+
+    .shopNow {
+        top: 43%;
+        left: 45%;
+    }
+}
+
+/* Small phones: from 0 to 320px */
+@media only screen and (max-width: 320px) {
+    #video {
+        left: -100%;
+    }
+}

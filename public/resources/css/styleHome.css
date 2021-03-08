@@ -1,0 +1,59 @@
+.titleOverVideo {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: color 4s;
+    letter-spacing: 20px;
+    width: 100%;
+    z-index: 1;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transition: color 4s;
+    -moz-transition: color 4s;
+    -ms-transition: color 4s;
+    -o-transition: color 4s;
+}
+
+#video {
+    position: fixed;
+    top: 0%;
+    left: -10%;
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(10px);
+    filter: brightness(50%);
+    -webkit-filter: blur(10px);
+    -ms-webkit-filter: blur(10px);
+    transition: filter 4s;
+    -webkit-transition: filter 4s;
+    -moz-transition: filter 4s;
+    -ms-transition: filter 4s;
+    -o-transition: filter 4s;
+}
+
+#mute {
+    top: 4%;
+    left: 90%;
+    position: fixed;
+    z-index: 1
+}
+
+#play {
+    display: none
+}
+
+.shopNow {
+    opacity: 0;
+    transition: opacity 1s;
+    position: fixed;
+    top: 39%;
+    left: 48%;
+}

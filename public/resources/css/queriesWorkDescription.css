@@ -1,0 +1,182 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1199px) {
+    #cart {
+        width: 40%;
+    }
+}
+
+/* Small tablet to big tablet: from 811px to 1023px */
+@media only screen and (max-width: 1023px) {
+    .vertivalLine {
+        border-left: 1px solid rgba(211, 211, 211, 0.411);
+        height: 25px;
+        margin-right: 4%;
+    }
+
+    .carousel {
+        margin-top: 2%;
+        width: 15%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    #add {
+        font-weight: 300;
+    }
+
+    .descriptionBackground {
+        background-image: linear-gradient(rgba(27, 27, 27, 0.746), rgb(0, 0, 0));
+        position: relative;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100vh;
+    }
+
+    #backDesktop {
+        display: none;
+    }
+
+    #backMobile {
+        display: inline-block;
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%;
+        overflow: scroll;
+    }
+
+    .container {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-bottom: 30%;
+    }
+
+    .slide {
+        position: relative;
+        display: block;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .row {
+        margin-left: 10%;
+        margin-bottom: 5%;
+        width: 90%;
+    }
+
+    .column {
+        display: inline-block;
+        width: 16%;
+        margin-left: 3%;
+    }
+
+    /* The expanding image container */
+    .containerExpandedImg {
+        width: 100%;
+        position: relative;
+    }
+
+    #expandedImg {
+        margin-left: 15%;
+        width: 70%;
+        border-radius: 5%;
+        padding: 0.5%;
+        border: 1px solid rgba(255, 255, 255, 0.068);
+        -webkit-border-radius: 5%;
+        -moz-border-radius: 5%;
+        -ms-border-radius: 5%;
+        -o-border-radius: 5%;
+    }
+
+    .containerDescription {
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    .mainDesc {
+        font-weight: 300;
+        font-size: 150%;
+        text-align: center;
+        padding-left: 10%;
+    }
+
+    .description {
+        font-weight: 300;
+        text-align: justify;
+
+    }
+}
+
+/* Small tablet to big tablet: from 768px to 811px */
+@media only screen and (max-width: 811px) {
+
+    .titleAndShop {
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .name {
+        margin-left: 10%;
+        width: 80%;
+        font-size: 180%;
+    }
+
+    .shop {
+        width: 20%;
+    }
+
+    #cart {
+        width: 30%;
+    }
+
+    .itemsCounter {
+        font-size: 80%;
+    }
+
+    .carousel {
+        width: 15%;
+    }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+    .name {
+        text-align: left;
+        margin-left: 5%;
+        width: 70%;
+        font-size: 100%;
+    }
+
+    .shop {
+        margin-right: 5%;
+        width: 30%;
+    }
+
+    #cart {
+        width: 40%;
+    }
+
+    #expandedImg {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    */ .containerDescription {
+        margin-top: 5%;
+    }
+
+    .description {
+        padding: 0 10% 0 10%;
+    }
+}

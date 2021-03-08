@@ -1,0 +1,54 @@
+.descriptionBackground {
+    background-image: linear-gradient(rgba(78, 78, 78, 0.746), rgb(22, 22, 22));
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.carousel {
+    width: 15%;
+    opacity: 0.7;
+}
+
+.wrapper {
+    margin-top: 5%
+}
+
+#back {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.icon {
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.worksGallery,
+.titlesWork {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 10px;
+}
+
+.worksGallery {
+    font-size: 300%;
+    margin-bottom: 2%;
+}
+
+.titlesWork {
+    font-size: 400%;
+}

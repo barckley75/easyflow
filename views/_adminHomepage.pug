@@ -1,0 +1,73 @@
+//- ------------------------- HOMEPAGE SECTION -------------------------
+
+//- Create Homepage
+section.formBox.createHomepage
+    h2.pagesTitle Create the homepage
+    div.icon
+        img(src="/resources/img/icons/set0/home.svg" width="5%" alt="Home")
+    form.inputCentered.createHomepageForm
+        div.formInput
+            label.admin__label(for='text') Your business in one sentence
+            input#createTitleOverVideo.admin__input(type='text', placeholder='your business in one sentence',  maxlength='30')
+        div.formInput
+            input.admin__input(type='file', placeholder='Your reel', accept='video/mp4', name='createVideoCover', id='createVideoCover', required)
+            label.admin__label(for='createVideoCover') Homepage video
+        div
+            button.btnHomepage Submit
+
+//- Select Homepage
+section.formBox.selectHomepage
+    h2.pagesTitle Select a homepage
+    div.icon
+        img(src="/resources/img/icons/set0/home.svg" width="5%" alt="Home")
+    form.selectHomepageForm
+        ul
+            for home in homepage
+                li
+                    if (home.publish)
+                        input.selectHomepageChecked(type="radio" name=`select` value=`${home._id}` checked)
+                    else
+                        input.selectHomepageChecked(type="radio" name=`select` value=`${home._id}`)
+                    video.previewHomepage
+                        source(src=`/img/homepage/${home.videoCover}` type="video/mp4")
+                    label.admin__label(for=`${home._id}`) #{home.titleOverVideo}
+
+        input.btnHomepage(type="submit", value="Submit")
+
+//- Update Homepage
+section.formBox.updateHomepage
+    h2.pagesTitle choose the page you want to upload
+    div.icon
+        img(src="/resources/img/icons/set0/home.svg" width="5%" alt="Home")
+    form.updateHomepageForm
+        ul
+            for home in homepage
+                li
+                    input.selectUpdateHomepageChecked(type="radio" name=`select` value=`${home._id}`)
+                    video.previewHomepage
+                        source(src=`/img/homepage/${home.videoCover}` type="video/mp4")
+                    label.admin__label(for=`${home._id}`) #{home.titleOverVideo}
+        div.inputCentered.formInput
+            label.admin__label(for='text') Your business in one sentence
+            input#titleOverVideo.admin__input(type='text', placeholder='your business in one sentence',  maxlength='30')
+        div.inputCentered.formInput
+            input.admin__input(type='file', placeholder='Your reel', accept='video/mp4', name='videoCover', id='videoCover', required)
+            label.admin__label(for='videoCover') Homepage video
+        div
+            input.btnHomepage(type="submit", value="Submit")
+
+//- Delete Homepage
+section.formBox.deleteHomepages
+    h2.deleteTitle Delete item
+    div.icon
+        img(src="/resources/img/icons/set0/home.svg" width="5%" alt="Shop")
+    form.deleteHomepageForm
+        ul
+            for home in homepage
+                li
+                    input.deleteCheckedHomepage(type="checkbox", name=`${home._id}`, value=`${home._id}`)
+                    video.previewHomepage
+                        source(src=`/img/homepage/${home.videoCover}` type="video/mp4")
+                    label.admin__label(for=`${home._id}`) #{home.titleOverVideo}
+
+        input.btnHomepage(type="submit", value="Submit")

@@ -1,0 +1,49 @@
+extends base
+block append head
+    link(rel="stylesheet" type="text/css" href="/resources/css/styleBlog.css")
+    link(rel="stylesheet" type="text/css" href="/resources/css/queriesBlog.css")
+
+    div.loader
+
+block content
+    include _desktopMenu
+    include _mobileMenu
+
+    div.show(style="display:none;")
+        .header
+            h1=blogPage[0].blogTitle
+        .row
+            each post in blog
+                //- LEFT COLUMN
+                .leftcolumn
+                    .card.styleCard
+                        .card
+                            h2.blogTitlePost=post.postTitle
+                            h5=post.createAt.toUTCString()
+                        img.fakeimg(src=`/img/blog/${post.photoBlog}`, alt="Post Image")
+                        .long_text !{post.longText}
+
+
+            //- RIGHT COLUMN
+            .rightcolumn
+                .card
+                    h2 About Me
+                    each home in homepage
+                        if (home.publish)
+                            video.fakeimg(src=`/img/homepage/${home.videoCover}`, alt="Post Image")
+                    div
+                        .about !{blogPage[0].aboutMe}
+                .card.name
+                    h3=blogPage[0].blogName
+                .card
+                    h3.popular Popular Post
+                    each post in blog
+                        if (post.popular)
+                            h2.blogTitlePost=post.postTitle
+                            img.fakeimg(src=`/img/blog/${post.photoBlog}`, alt="Post Image")
+                            .long_text !{post.longText.substr(0, 1100)}...
+
+
+        footer.footer
+            div
+                h4.credits Created by DOT - Connecting thoughts

@@ -1,0 +1,28 @@
+extends base
+block content
+block append head
+    link(rel="stylesheet" type="text/css" href="/resources/css/styleHome.css")
+    link(rel="stylesheet" type="text/css" href="/resources/css/queriesHome.css")
+
+    div.loader
+
+    include _desktopMenu
+    include _mobileMenu
+
+    section
+        div.show(style="display:none;")
+            div.background
+                #mute
+                    img#photo(src="/resources/img/icons/set0/volume2.svg" width="40%" title="Volume" alt="Volume")
+            .clip(style="text-align:center")
+                each home in homepage
+                    if (home.publish)
+                        div
+                            video#video(autoplay, muted, loop, playsinline)
+                                source(src=`/img/homepage/${home.videoCover}` type="video/mp4")
+                                |                 Your browser does not support HTML5 video.
+                        h1.titleOverVideo=home.titleOverVideo
+
+    section
+        a.shopNow(href="/works" title="Works Gallery")
+                img(src="/resources/img/icons/set0/shop.svg" width="20%" alt="Works Gallery")

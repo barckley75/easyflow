@@ -1,0 +1,29 @@
+extends base
+block append head
+    link(rel="stylesheet" type="text/css" href="/resources/css/styleAdmin.css")
+    link(rel="stylesheet" type="text/css" href="/resources/css/queriesAdmin.css")
+
+    link(rel="stylesheet" href="/vendors/jodit-3.3.24/build/jodit.min.css")
+    script(src="/vendors/jodit-3.3.24/build/jodit.min.js")
+
+block content
+
+    div.loader
+    .show(style='display:none;')
+
+        include _desktopMenu
+        include _mobileMenu
+
+        //- Menu
+        .containerAdmin
+            include _adminMenu
+            include _adminHomepage
+            include _adminWorkPage
+            include _adminWork
+            include _adminBlog
+            include _adminContacts
+
+        script.
+            let description = new Jodit('#description');
+            let aboutMe = new Jodit('#aboutMe');
+            let blogEditor = new Jodit('#blogEditor');

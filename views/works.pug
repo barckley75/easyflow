@@ -1,0 +1,26 @@
+extends base
+block append head
+    link(rel="stylesheet" type="text/css" href="/resources/css/_carousel.css")
+    link(rel="stylesheet" type="text/css" href="/resources/css/styleWorksGallery.css")
+    link(rel="stylesheet" type="text/css" href="/resources/css/queriesWorks.css")
+
+    div.loader
+
+    include _desktopMenu
+    include _mobileMenu
+block content
+
+    div.descriptionBackground.show(style="display:none;")
+        for work in workPage
+            if (work.publish)
+                img#back(src=`/img/workpage/desktop/${work.imageCover}`, alt=`${work.imageCover}`)
+                img#backMobile(src=`/img/workpage/mobile/${work.imageCover}`, alt=`${work.imageCover}`)
+        div.descriptionBackground
+            for work in workPage
+                if (work.publish)
+                    .worksGallery=work.title
+            include _carousel
+            section
+                for work in workPage
+                    if (work.publish)
+                        .titlesWork=work.subTitle

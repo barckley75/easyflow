@@ -1,0 +1,45 @@
+//- ------------------------- CONTACTS SECTION -------------------------
+
+//- Update Contacts
+section.formBox.updateContactsPage
+    h2.pagesTitle Update Contacts Page
+    div.icon
+        img(src="/resources/img/icons/set0/mail.svg" width="5%" alt="Home")
+    form.updateContactsForm
+        div.formInputContacts
+            div.inputContacts
+                label.admin__label(for='text') First social name
+                input#socialName_1.admin__input(type='text', placeholder='First social name',  maxlength='30')
+            div.inputContacts
+                label.admin__label(for='text') First social address
+                input#socialAddress_1.admin__input(type='text', placeholder='First social address',  maxlength='30')
+            div.inputContacts
+                label.admin__label(for='socialIcon_1') First social icon
+                input.admin__input(type='file', placeholder='First social icon', accept='image/*', name='socialIcon_1', id='socialIcon_1', required)
+        div.formInputContacts        
+            div.inputContacts
+                label.admin__label(for='text') Second social name
+                input#socialName_2.admin__input(type='text', placeholder='Second social name',  maxlength='30')
+            div.inputContacts
+                label.admin__label(for='text') Second social address
+                input#socialAddress_2.admin__input(type='text', placeholder='Second social address',  maxlength='30')
+            div.inputContacts
+                label.admin__label(for='socialIcon_2') Second social icon
+                input.admin__input(type='file', placeholder='Second social icon', accept='image/*', name='socialIcon_2', id='socialIcon_2', required)
+        div.formInputContacts
+            div.inputContacts
+                label.admin__label(for='text') Third social name
+                input#socialName_3.admin__input(type='text', placeholder='Third social name',  maxlength='30')
+            div.inputContacts
+                label.admin__label(for='text') Third social address
+                input#socialAddress_3.admin__input(type='text', placeholder='Third social address',  maxlength='30')
+            div.inputContacts
+                label.admin__label(for='socialIcon_3') Third social icon
+                input.admin__input(type='file', placeholder='Third social icon', accept='image/*', name='socialIcon_3', id='socialIcon_3', required)
+
+        div.formInputContacts
+            label.admin__label(for='imageContactsCover') Contacts background page
+            input.admin__input(type='file', placeholder='Image Cover', accept='image/*', name='imageContactsCover', id='imageContactsCover', required)
+        div
+            input.btnContacts(type="submit", value="Submit")
+            

@@ -1,0 +1,124 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1199px) {
+
+    .wrapper {
+        margin-bottom: 20%;
+    }
+
+    .worksGallery {
+        margin-top: 15%;
+        margin-bottom: 16%;
+    }
+}
+
+/* Small tablet to big tablet: from 811px to 1023px */
+@media only screen and (max-width: 1023px) {
+    .carousel {
+        width: 20%;
+    }
+
+    .worksGallery,
+    .titlesWork {
+        margin-top: 5%;
+        font-weight: 300;
+    }
+
+    .worksGallery {
+        font-size: 180%;
+    }
+
+    .titlesWork {
+        font-size: 140%;
+    }
+
+    #backMobile {
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%
+    }
+}
+
+/* Small tablet to big tablet: from 768px to 811px */
+@media only screen and (max-width: 811px) {
+
+    .carousel {
+        filter: saturate(1) contrast(1);
+        -webkit-filter: saturate(1) contrast(1);
+    }
+
+    .borderIcon {
+        padding: 0.5%;
+        border: 1 solid rgba(255, 255, 255, 0.623);
+    }
+
+    .worksGallery,
+    .titlesWork {
+        margin-top: 20%;
+        margin-bottom: 15%;
+    }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    .carousel {
+        width: 30%;
+    }
+
+    .worksGallery {
+        font-size: 100%;
+    }
+
+    .titlesWork {
+        font-size: 80%;
+    }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+    .worksGallery {
+        margin-top: 20%;
+        margin-bottom: 15%;
+    }
+
+    .titlesWork {
+        margin-top: 20%;
+    }
+
+    .carousel {
+        width: 40%
+    }
+}
+
+/* Small phones: from 0 to 375px */
+@media only screen and (max-width: 375px) {
+
+    .worksGallery {
+        margin-bottom: 15%;
+    }
+
+    .titlesWork {
+        margin-top: 20%;
+    }
+
+    .carousel {
+        width: 40%
+    }
+}
+
+/* Small phones: from 0 to 320 */
+@media only screen and (max-width: 320px) {
+
+    .worksGallery {
+        margin-top: 15%;
+        margin-bottom: 16%;
+    }
+
+    .titlesWork {
+        margin-top: 20%;
+    }
+
+    .wrapper {
+        margin-bottom: 0%;
+    }
+}

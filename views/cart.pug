@@ -1,0 +1,20 @@
+extends base
+block append head
+    link(rel="stylesheet" type="text/css" href="/resources/css/styleCart.css")
+    link(rel="stylesheet" type="text/css" href="/resources/css/queriesCart.css")
+
+    div.loader
+
+block content
+    include _desktopMenu
+    include _mobileMenu
+
+    .containercart.show(style="display:none;")
+        .titlecartPage Your Cart
+
+        each result in results
+            data(value=result)
+            include _itemCart
+
+        section.checkout.cart
+            .titlecartCheckout Total To Pay: <b>#{total}.00 €

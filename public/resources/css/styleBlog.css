@@ -1,0 +1,150 @@
+h1,
+h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h1 {
+    color: rgb(155, 155, 155);
+}
+
+.blogTitlePost {
+    color: rgb(87, 87, 87);
+    text-align: right;
+}
+
+.date {
+    text-align: right;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    background: #383838;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 1%;
+    font-size: 100%;
+    text-align: center;
+    background: #262626;
+}
+
+.longText {
+    margin-left: 5%;
+    margin-right: 8%;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+.card {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.name {
+    font-size: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+    position: absolute;
+    top: 20%;
+    right: 0.5%;
+    float: left;
+    width: 25%;
+    padding-left: 1%;
+}
+
+/* Fake image */
+.fakeimg {
+    border-radius: 30px;
+    width: 100%;
+    padding: 20px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: #e0e0e0;
+    margin-left: 2%;
+    padding: 20px;
+    margin-top: 5%;
+    color: rgb(116, 116, 116);
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.popular {
+    margin-bottom: 10%;
+}
+
+/* Footer */
+.footer {
+    height: 20vh;
+    background: linear-gradient(rgba(99, 99, 99, 0), rgb(0, 0, 0));
+    padding: 20px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.credits {
+    color: rgba(255, 255, 255, 0.164);
+    position: fixed;
+    right: 4%;
+    bottom: 3%;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1199px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+
+    .rightcolumn {
+        position: relative;
+    }
+
+    .fakeimg {
+        border-radius: 30px;
+        width: 100%;
+        padding: 0;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+}
+
+.long_text {
+    margin-top: 3%;
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: justify;
+    line-height: 180%;
+}
+
+.about {
+    font-weight: 300;
+}

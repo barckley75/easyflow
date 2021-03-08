@@ -1,0 +1,28 @@
+//- Menu
+select#chooseForm Choose an option from menu
+    option() Choose a form
+    optgroup(label='Homepage Section')
+        option(value='createHomepage') Create Homepage
+        option(value='selectHomepage') Select Homepage
+        option(value='updateHomepage') Update Homepage
+        option(value='deleteHomepages') Delete Homepage
+
+    optgroup(label='Shop Page Gallery')
+        option(value='createWorkPage') Create Shop Page Gallery
+        option(value='selectWorkPage') Select Shop Page Gallery
+        option(value='updateWorkPage') Update Shop Page Gallery
+        option(value='deleteWorkPage') Delete  Shop Page Gallery
+
+    optgroup(label='Item Description')
+        option#wait(value='work') Create An Item For The Gallery
+        option(value='deleteWorks') Delete An item From The Gallery
+        
+    optgroup(label='Blog Page')
+        option(value='blogPage') Update Blog Page
+    optgroup(label='Post Section')
+        option(value='blogPost') Create A New Post For The Blog
+        option(value='selectPopular') Select The Most Popular Post
+        option(value='deletePost') Delete A Post From The Blog
+
+    optgroup(label='Contacts Page')
+        option(value='updateContactsPage') Update Page Contacts

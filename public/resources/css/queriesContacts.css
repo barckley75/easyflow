@@ -1,0 +1,38 @@
+@media only screen and (max-width:1023px) {
+
+    #back {
+        display: none;
+    }
+
+    #backMobile {
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .socialnetworks {
+        padding:0;
+        margin-left: 50%;
+        transform: translateX(-22%);
+        flex-direction: column;
+        -webkit-transform: translateX(-22%);
+        -moz-transform: translateX(-22%);
+        -ms-transform: translateX(-22%);
+        -o-transform: translateX(-22%);
+}
+
+    .titleGetInTouch {
+        letter-spacing: 5px;
+        font-size: 90%;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:811px) {}
+
+@media only screen and (max-width:767px) {}
+
+@media only screen and (max-width:480px) {}

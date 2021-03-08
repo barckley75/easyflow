@@ -1,0 +1,105 @@
+.section_social {
+    position: fixed;
+    background-image: linear-gradient(rgba(148, 148, 148, 0.746), rgb(10, 10, 10));
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+#back {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.titleContacts,
+.titleGetInTouch {
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    letter-spacing: 50px;
+    font-size: 300%;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.titleContacts {
+    letter-spacing: 20px;
+    margin-top: 8%;
+    font-size: 100%;
+}
+
+.titleGetInTouch {
+    letter-spacing: 30px;
+    font-size: 200%;
+}
+
+.socialnetworks {
+    width: 100%;
+    display: flex;
+}
+
+.social_1,
+.social_2,
+.social_3 {
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2%;
+    border-radius: 3%;
+    background: rgba(255, 255, 255, 0.144);
+    width: 33.33%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+}
+
+.name {
+    text-align: center;
+
+}
+
+#contactIcons {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts {
+    text-decoration: none;
+    color: #fff;
+    padding: 8%;
+}
+
+.socialIcon {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 5%;
+    list-style-type: none;
+    justify-content: center;
+}
+
+
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 2%;
+    font-size: 80%;
+}
+
+footer p {
+    color: #acacac;
+    text-align: center;
+    margin-bottom: 3%;
+}

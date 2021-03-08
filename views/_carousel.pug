@@ -1,0 +1,5 @@
+section.imgCarousel
+    .wrapper
+        each work in works
+            a(href=`/workDescription/${work._id}`)
+                img.borderIcon.carousel(src=`/img/imagePreview/${work.imagePreview}` title=work.workName alt=work.workName)

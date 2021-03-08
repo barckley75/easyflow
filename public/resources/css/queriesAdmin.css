@@ -1,0 +1,140 @@
+@media only screen and (max-width:1199px) {
+
+    .previewHomepage {
+        width: 7%;
+    }
+
+    .previewDeleteWork {
+        width: 4%;
+    }
+
+    .previewDeleteBlog {
+        width: 15%;
+    }
+
+    select#chooseForm {
+        font-size: 90%;
+    }
+
+    div.formInput {
+        margin-left: 7%;
+    }
+
+    input.admin__input {
+        position: relative;
+        margin-left: 12%;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:1023px) {
+
+    .previewHomepage {
+        width: 6.4%;
+    }
+
+    .previewDeleteWork {
+        width: 3%;
+    }
+
+    .previewDeleteBlog {
+        width: 14%;
+    }
+
+    select#chooseForm {
+        font-size: 80%;
+    }
+
+    input.admin__input {
+        margin-left: 12%;
+    }
+
+    .btnPages,
+    .btnWork,
+    .btnBlog {
+        padding: 1.5%;
+
+    }
+
+    .formBox {
+        margin-bottom: 25%;
+        background-color: rgba(80, 80, 80, 0.137);
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 5px;
+        padding: 3%;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    .pagesTitle,
+    .workGalleryTitle,
+    .workTitle,
+    .deleteTitle,
+    .blogTitle {
+        color: rgb(128, 128, 128);
+        text-align: center;
+    }
+
+    input.admin__input {
+        padding-left: 2%;
+        height: 40px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+}
+
+@media only screen and (max-width:811px) {
+
+    .btnPages,
+    .btnWork,
+    .btnBlog {
+        padding: 2%;
+
+    }
+}
+
+@media only screen and (max-width:767px) {
+
+    input.admin__input {
+        margin-left: 12%;
+    }
+
+    .btnPages,
+    .btnWork,
+    .btnBlog {
+        padding: 2.5%;
+
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .previewHomepage {
+        width: 13%;
+    }
+
+    .previewDeleteWork {
+        width: 7.4%;
+    }
+
+    .previewDeleteBlog {
+        width: 28%;
+    }
+
+    .admin__label {
+        font-size: 80%;
+    }
+
+    .btnPages,
+    .btnWork,
+    .btnBlog {
+        padding: 3%;
+
+    }
+}

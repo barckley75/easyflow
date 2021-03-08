@@ -1,0 +1,142 @@
+body {
+    background-color: #222;
+}
+
+.titlecartPage {
+    letter-spacing: 5px;
+}
+
+.deleteItem {
+    background: transparent;
+    text-decoration: none;
+    border-block-end-style: none;
+    border-block-start: none;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+.titlecartPage,
+.titlecartCheckout {
+    margin-bottom: 3%;
+    font-size: 200%;
+    text-align: center;
+}
+
+#firstLine {
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 2%
+}
+
+#cartTitle {
+    width: 85%;
+    margin-left: 5%;
+}
+
+#deleteItem {
+    margin-top: .3%;
+    margin-right: 5%;
+    width: 15%;
+    text-align: right;
+}
+
+.containercart {
+    padding-top: 4%;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 300;
+    color: #fff;
+}
+
+.cartFormBox {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 3%;
+    background-color: rgba(105, 105, 105, 0.137);
+    border: 1px solid rgba(83, 83, 83, 0.377);
+    width: 85%;
+    padding: 3%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.cartFormCard {
+    width: 90%;
+    background-color: rgba(80, 80, 80, 0.637);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 3%;
+    border-radius: 1%;
+    display: flex;
+    -webkit-border-radius: 1%;
+    -moz-border-radius: 1%;
+    -ms-border-radius: 1%;
+    -o-border-radius: 1%;
+}
+
+.cart__label {
+    margin-bottom: 10%;
+    display: flex;
+}
+
+#imageCart {
+    padding: 1%;
+    width: 100%;
+    border-radius: 3%;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+}
+
+#imageCart:hover {
+    border: 1px solid rgba(255, 255, 255, 0.849);
+}
+
+.rightCard {
+    margin-left: 12%;
+    font-size: 70%;
+    width: 50%;
+}
+
+.quantityItem,
+#priceItem,
+.priceItems {
+    font-weight: 500;
+}
+
+#titleDesc {
+    margin-bottom: 5%;
+}
+
+#descriptionItem {
+    line-height: 1.4;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.checkOutItem {
+    font-size: 90%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background-color: rgba(95, 95, 95, 0.418);
+    border-radius: 10px;
+    padding: 3%;
+    -webkit-border-radius: 1%;
+    -moz-border-radius: 1%;
+    -ms-border-radius: 1%;
+    -o-border-radius: 1%;
+}
+
+.titlecartCheckout {
+    font-size: 100%;
+    margin-top: 10%;
+    margin-bottom: 30%;
+}

@@ -1,0 +1,88 @@
+.signupTitle,
+.loginTitle {
+    margin-bottom: 4%;
+    text-align: center;
+    color: #aaa;
+}
+
+.containerLogin {
+    padding-top: 4%;
+    height: 170vh;
+    background-image: linear-gradient(rgb(31, 31, 31), rgb(0, 0, 0));
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    letter-spacing: 4px;
+    font-weight: 300;
+}
+
+.loginFormBox {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 3%;
+    background-color: rgba(80, 80, 80, 0.137);
+    box-sizing: border-box;
+    width: 70%;
+    border-radius: 2%;
+    padding: 3%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+}
+
+.loginFormInput {
+    background-color: rgba(104, 104, 104, 0.171);
+    margin: 2%;
+    padding: 3%;
+    border-radius: 4%;
+    width: 120%;
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 4%;
+    -ms-border-radius: 4%;
+    -o-border-radius: 4%;
+}
+
+.signupForm,
+.loginForm {
+    text-align: right;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.btnSignup,
+.btnLogin {
+    margin-top: 3%;
+    border-radius: 20px;
+    padding: 1.5%;
+    color: rgb(168, 168, 168);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.form__label,
+.form__input {
+    margin-bottom: 2%;
+    padding-left: 0;
+}
+
+.form__label {
+    color: #fff;
+}
+
+input.form__input {
+    border-radius: 30px;
+    width: 40vh;
+    padding-left: 2%;
+    height: 40px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}

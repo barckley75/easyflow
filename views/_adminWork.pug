@@ -1,0 +1,47 @@
+//- ------------------------- WORK SECTION -------------------------
+
+    //- Work description
+div.loader(style='display: none')
+section.formBox.work
+    h2.workTitle Add item
+    div.icon
+        img(src="/resources/img/icons/set0/shop.svg" width="5%" alt="Shop")
+    form.inputCentered.workForm
+        div.formInput
+            label.admin__label(for='text') Name of the work
+            input#workName.admin__input(type='text', placeholder='Work Name', maxlength='30', required)
+        div.formInput
+            label.admin__label(for='text') Short Item Desription
+            input#workTitle.admin__input(type='text', placeholder='Your item in one sentence',  maxlength='50', required)
+        div.formInput
+            label.admin__label(for='text') Item Price
+            input#price.admin__input(type='text', placeholder='Item price', required)
+        div.formInput
+            label.admin__label(for='text') Item description
+            textarea#description.admin__input(cols='21', type='text', placeholder='Describe your item', required)
+        div.formInput
+            label.admin__label(for='imagePreview') Image Preview
+            input.admin__input(type='file', placeholder='Image preview', accept='image/*', id='imagePreview', name='imagePreview', required)
+        div.formInput
+            label.admin__label(for='imageCover') Image cover
+            input.admin__input(type='file', placeholder='Image cover', accept='image/*', id='imageCover', name='imageCover', required)
+        div.formInput
+            label.admin__label(for='imagePoster') Photo Gallery
+            input.admin__input(type='file', placeholder='Max ten photos', accept='image/*', class='imagePoster', name='imagePoster', multiple, required)
+        div
+            button.btnWork Submit
+
+    //- Delete Works
+section.formBox.deleteWorks
+    h2.deleteTitle Delete item
+    div.icon
+        img(src="/resources/img/icons/set0/shop.svg" width="5%" alt="Shop")
+    form.deleteForm
+        ul
+            for work in works
+                li
+                    input.deleteCheckedWork(type="checkbox", name=`${work.workName}`, value=work._id)
+                    img.previewDeleteWork(src=`/img/imagePreview/${work.imagePreview}` type="image/jpeg")
+                    label.admin__label(for=`${work.workName}`) #{work.workName}
+
+        input.btnWork(type="submit", value="Submit")

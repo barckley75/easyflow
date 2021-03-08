@@ -1,0 +1,35 @@
+extends base
+block append head
+    link(rel="stylesheet" type="text/css" href="/resources/css/styleContacts.css")
+    link(rel="stylesheet" type="text/css" href="/resources/css/queriesContacts.css")
+
+    .div.loader
+
+block content
+    include _desktopMenu
+    include _mobileMenu
+    div.show(style="display:none;")
+        img#back(src=`/img/contactsPage/imageCover/desktop/${contacts.imageCover}`, alt=`${contacts.imageCover}`)
+        img#backMobile(src=`/img/contactsPage/imageCover/mobile/${contacts.imageCover}`, alt=`${contacts.imageCover}`)
+        section.section_social
+            h1.titleContacts My social networks
+            div.socialnetworks
+                div.social_1
+                    a.contacts(href=`https://${contacts.socialAddress_1}`, target="_blank")
+                        .name #{contacts.socialName_1}
+                        img.socialIcon(src=`/img/contactsPage/socialIcons/${contacts.socialIcon_1}`, width="40%", alt=`${contacts.socialName_1}`)
+                div.social_2
+                    a.contacts(href=`https://${contacts.socialAddress_2}`, target="_blank")
+                        .name #{contacts.socialName_2}
+                        img.socialIcon(src=`/img/contactsPage/socialIcons/${contacts.socialIcon_2}`, width="40%", alt=`${contacts.socialName_2}`)
+                div.social_3
+                    a.contacts(href=`https://${contacts.socialAddress_3}`, target="_blank")
+                        .name #{contacts.socialName_3}
+                        img.socialIcon(src=`/img/contactsPage/socialIcons/${contacts.socialIcon_3}`, width="40%", alt=`${contacts.socialName_3}`)
+            h1.titleGetInTouch get in touch
+
+        footer
+            div
+                p 
+                    | Front End And Back End Coded by Ivo Vacca - html, css3, JS, Node.js
+                    br
