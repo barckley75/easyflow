@@ -17,9 +17,11 @@ Copy all files in the html directory
 
 Build index.js file with parcel
 > npm run watch:js
-to watch index.js
-or
+
+to watch index.js or
+
 > npm run build:js
+
 to build the final bundle.js for production
 
 Start the server
